@@ -33,9 +33,18 @@ public class Ejemplo06 {
         int contador = 1;
         int limite;
         
+        System.out.println("Ingresar el valor de tabla");
+        tabla = entrada.nextInt();
+        System.out.println("Ingresar el limite");
+        limite = entrada.nextInt();
+        
+        
         do {
             operacion = tabla * contador;
-            System.out.printf("%d x %d = %d\n", tabla, contador, operacion);
+            System.out.printf("%d x %d = %d\n",
+                    tabla,
+                    contador,
+                    operacion);
             contador = contador + 1;
         } while (contador <= limite);
 
